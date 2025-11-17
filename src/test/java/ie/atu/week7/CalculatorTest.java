@@ -1,3 +1,5 @@
+package ie.atu.week7;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +22,7 @@ public class CalculatorTest {
     @Test
     public void testAdd_fail()
     {
-        Exception ex = assertThrows(ArithmeticExcedption.class, ()-> calc.add(Integer.Max_Value, 1));
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.add(Integer.MAX_VALUE, 1));
 
     }
 
